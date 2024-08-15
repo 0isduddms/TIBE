@@ -11,6 +11,7 @@ public class StreamAPI {
         list.add("static");
         list.add("void");
 
+        //for 문으로 List를 순회할 수 있다.
 //        for (int i = 0; i < list.size();i++) {
 //            System.out.println(list.get(i));
 //        }
