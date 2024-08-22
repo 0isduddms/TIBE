@@ -7,12 +7,8 @@ public class Sub {
     }
 }
 class Increase {
-    public int PlusA(int a) {
+    public int plus(int a) {
         return ++a;
-    }
-
-    public int PlusB(int b){
-        return ++b;
     }
 }
 class Multiply{
@@ -20,19 +16,17 @@ class Multiply{
         int a = 2;
         int b = 1;
         int c = a * b;
-        Increase A = new Increase();
-        Increase B = new Increase();
+        Increase D = new Increase();
         for (; a<10;) {
-            System.out.println();
             System.out.println(a+"단");
-            System.out.println(a + " * " + b + " = " + c);
             for(; b<10;) {
                 c = a * b;
                 System.out.println(a + " * " + b + " = " + c);
-                b = B.PlusB(b);
+                b = D.plus(b);
             }
-            a = A.PlusA(a);
+            a = D.plus(a);
             b = 1;
+            System.out.println();
         }
 
         return 0;
